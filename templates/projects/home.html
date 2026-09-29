@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Moses Aduragbemi Dev{% endblock %}
+
+{% block content %}
+ <style>
+    body{
+        background-color: #6D28D9;
+    } 
+    
+    .hero-section{
+        background-color: #6D28D9;
+    }
+</style>
+<section id="home" class="hero-section">
+    <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+            <div class="col-lg-7">
+                <span class="eyebrow">WEB DEVELOPER • DESIGNER</span>
+                <h1 class="display-title mt-3">I design and build digital experiences that engage and <span>perform.</span></h1>
+                <p class="hero-text mt-4">
+                    Hi, I'm <strong>Ogunmoyede Moses Aduragbemi</strong>. I create modern,
+                    responsive websites and web applications using clean code and thoughtful design.
+                </p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#projects" class="btn btn-primary btn-lg px-4">View My Projects</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg px-4">Let's Talk</a>
+                </div>
+                <div class="hero-meta mt-5">
+                    <span><i class="dot"></i> Open to opportunities</span>
+                    <span>Python / Django</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5 mt-lg-0">
+                <div class="hero-card">
+                    <div class="code-window">
+                        <div class="window-dots"><span></span><span></span><span></span></div>
+                        <pre><code><span class="code-bg-primary">class</span> Developer:
+    name = <span class="code-green">"Moses"</span>
+    stack = [
+        <span class="code-green">"Django"</span>,
+        <span class="code-green">"Python"</span>,
+        <span class="code-green">"JavaScript"</span>,
+        <span class="code-green">"Bootstrap"</span>
+    ]
+
+    <span class="code-purple">def</span> <span class="code-blue">build</span>(self):
+        <span class="code-purple">return</span> <span class="code-green">"Great websites"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--profile picture-->
+    <div style="text-align: center;">
+        <img src="{%static 'images/Gamilee 2.jpg'%}"
+     class="rounded-circle"
+        alt="Moses Ogunmoyede"
+        style="
+        width:300px;
+        height:300px;
+        object-fit: cover;
+        border:1px solid #0d35fd;
+        box-shadow: 0020px rgba(13, 110, 250, 0.30);">
+        
+    </div>
+    
+</section>
+
+<section id="about" class="section-padding">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">ABOUT ME</span>
+            <h2>Turning ideas into useful products.</h2>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+                <p class="lead text-light">
+                    I'm a web developer who enjoys building practical, user-friendly websites
+                    and applications. I focus on writing maintainable code while creating interfaces
+                    that are simple to understand and pleasant to use.
+                </p>
+                <p class="text-secondary">
+                    My work spans frontend development, backend development with Django,
+                    database-driven applications, and responsive web design. I'm continuously
+                    learning and improving through hands-on projects.
+                </p>
+                <a href="#contact" class="text-link">Start a project with me →</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="stats-card">
+                    <div><strong>01</strong><span>Creative<br>Design</span></div>
+                    <div><strong>02</strong><span>Clean<br>Development</span></div>
+                    <div><strong>03</strong><span>Responsive<br>Websites</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section-padding section-alt">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">MY TOOLKIT</span>
+            <h2>Skills & technologies</h2>
+        </div>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>HTML5</span><small>Structure</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>CSS3</span><small>Styling</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>Bootstrap</span><small>UI framework</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>JavaScript</span><small>Interactivity</small></div></div>
+             <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>React</span><small>User interfaces</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>Python</span><small>Programming</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>Django</span><small>Backend</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>WordPress</span><small>Content Management System (CSM)</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>PostgreSQL</span><small>Database management system</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>SQLite</span><small>Database</small></div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span>Git & GitHub</span><small>Version control</small></div></div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section-padding">
+    <div class="container">
+        <div class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
+            <div>
+                <span class="eyebrow">SELECTED WORK</span>
+                <h2>Projects I've built</h2>
+            </div>
+            <span class="text-secondary">{{ projects|length }} project{{ projects|length|pluralize }}</span>
+        </div>
+
+        <div class="row g-4">
+            {% for project in projects %}
+            <div class="col-md-6 col-lg-4">
+                <article class="project-card h-100">
+                    <div class="project-image">
+                        {% if project.image %}
+                            <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                        {% else %}
+                            <div class="project-placeholder">
+                                <span>&lt;/&gt;</span>
+                                <small>{{ project.title }}</small>
+                            </div>
+                        {% endif %}
+                        {% if project.featured %}
+                            <span class="featured-badge">Featured</span>
+                        {% endif %}
+                    </div>
+                    <div class="p-4">
+                        <h3 class="h4">{{ project.title }}</h3>
+                        <p class="text-secondary">{{ project.description|truncatewords:24 }}</p>
+                        <div class="tech-list mb-4">
+                            {% for tech in project.technology_list %}
+                                <span>{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="d-flex gap-3">
+                            <a href="{% url 'project_detail' project.slug %}" class="text-link">Details →</a>
+                            {% if project.github_url %}
+                                <a href="{{ project.github_url }}" class="text-link" target="_blank" rel="noopener">GitHub ↗</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {% empty %}
+            <div class="col-12">
+                <div class="empty-projects">
+                    <h3>Add your first project</h3>
+                    <p>Go to <strong>/admin/</strong> after creating a superuser and add projects from the Django dashboard.</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section-padding section-alt">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <span class="eyebrow">CONTACT</span>
+                <h2 class="display-6 fw-bold mt-3">Have a project in mind?</h2>
+                <p class="text-secondary mt-3">
+                    Send me a message and tell me what you want to build. I'll get back to you as soon as possible.
+                </p>
+                <div class="contact-info mt-4">
+                    <a href="mailto:oluwatobilobaogunmoyede@gmail.com">oluwatobilobaogunmoyede@gmail.com</a>
+                    <a href="https://github.com/oluwatobilobaogunmoyede" target="_blank" rel="noopener">github.com/oluwatobilobaogunmoyede</a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <form method="post" class="contact-form">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="{{ form.name.id_for_label }}">Name</label>
+                            {{ form.name }}
+                        </div>
+                        <div class="col-md-6">
+                            <label for="{{ form.email.id_for_label }}">Email</label>
+                            {{ form.email }}
+                        </div>
+                        <div class="col-12">
+                            <label for="{{ form.subject.id_for_label }}">Subject</label>
+                            {{ form.subject }}
+                        </div>
+                        <div class="col-12">
+                            <label for="{{ form.message.id_for_label }}">Message</label>
+                            {{ form.message }}
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-lg px-4">Send Message →</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

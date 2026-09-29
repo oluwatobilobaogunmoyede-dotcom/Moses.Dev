@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }} | Moses Aduragbemi{% endblock %}
+
+{% block content %}
+<section class="detail-section">
+    <div class="container">
+        <a href="{% url 'home' %}#projects" class="text-link">← Back to projects</a>
+        <div class="row g-5 mt-3 align-items-center">
+            <div class="col-lg-7">
+                <div class="detail-image">
+                    {% if project.image %}
+                        <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                    {% else %}
+                        <div class="project-placeholder large"><span>&lt;/&gt;</span></div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-lg-5">
+                {% if project.featured %}<span class="eyebrow">FEATURED PROJECT</span>{% endif %}
+                <h1 class="display-5 fw-bold mt-2">{{ project.title }}</h1>
+                <p class="text-secondary mt-4">{{ project.description }}</p>
+                <div class="tech-list my-4">
+                    {% for tech in project.technology_list %}
+                        <span>{{ tech }}</span>
+                    {% endfor %}
+                </div>
+                <div class="d-flex flex-wrap gap-3">
+                    {% if project.live_url %}
+                        <a class="btn btn-primary" href="{{ project.live_url }}" target="_blank" rel="noopener">Live Demo ↗</a>
+                    {% endif %}
+                    {% if project.github_url %}
+                        <a class="btn btn-outline-light" href="{{ project.github_url }}" target="_blank" rel="noopener">View Code ↗</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
